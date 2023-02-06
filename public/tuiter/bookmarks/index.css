@@ -124,17 +124,24 @@ body{
 }
 
 .wd-message{
-
+    margin-right: 12px;
+    color: gray;
 }
 
 .wd-reply{
-
+    margin-left: 90px;
+    margin-right: 12px;
+    color: gray;
 }
 
 .wd-heart{
-
+    margin-left: 90px;
+    margin-right: 12px;
+    color: gray;
 }
 
 .wd-share{
-
+    margin-left: 90px;
+    margin-right: 12px;
+    color: gray;
 }
