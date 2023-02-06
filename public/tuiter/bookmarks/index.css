@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+/*this is A requirement css*/
+.wp-border {
+    position: relative;
+    left: 16px;
+    top:12px;
+    border-style: solid;
+}
+
+.wp-title-at-top{
+    font-size: 20px;
+}
+
+.wp-title-below-top{
+    position: relative;
+    left: 16px;
+    top:12px;
+    font-size: 20px;
+}
