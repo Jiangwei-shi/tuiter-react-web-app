@@ -6,18 +6,135 @@ body{
 /*this is A requirement css*/
 .wp-border {
     position: relative;
-    left: 16px;
-    top:12px;
-    border-style: solid;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 12px;
+    border-style:solid;
+    color: gray;
+    border-width: 1px;
 }
 
 .wp-title-at-top{
+    position: relative;
     font-size: 20px;
+    margin-left: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
 }
 
 .wp-title-below-top{
     position: relative;
-    left: 16px;
-    top:12px;
+    margin-left: 16px;
+    margin-bottom:12px;
+    margin-top:0;
+    font-size: 13px;
+}
+
+/*this is B requirement css*/
+.wp-content-border {
+    position: relative;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-style:solid;
+    color: gray;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+
+.wd-float-left {
+    float: left;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.wd-float-right {
+    float: right;
+    right: 16px;
+}
+
+.wd-image-corners-all-around {
+    border-radius: 48px;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+/*this is C requirement css*/
+.wd-avatar-name{
+    margin-left: 12px;
+    margin-top: 12px;
+    color: white;
     font-size: 20px;
+}
+
+.wd-avatar-name-detail{
+    margin-top: 12px;
+    color: gray;
+    font-size: 15px;
+}
+
+/*this is D requirement css*/
+.wd-partD-content{
+    margin-left: 78px;
+    margin-top: -25px;
+    margin-bottom: 12px;
+    weight: 506px;
+}
+
+/*this is E requirement css*/
+.wd-partE-image-position{
+    margin-left: 78px;
+    margin-top: 12px;
+}
+
+.wd-image-corners-top-around {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/*this is F requirement css*/
+.wd-partf-content-position{
+    margin-left: 78px;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.wd-partf-content-border{
+    border-style:solid;
+    color: gray;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+
+}
+
+/*this is G requirement css*/
+.wd-vote{
+    margin-left: 78px;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.wd-message{
+
+}
+
+.wd-reply{
+
+}
+
+.wd-heart{
+
+}
+
+.wd-share{
+
 }
