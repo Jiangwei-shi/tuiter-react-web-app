@@ -123,25 +123,13 @@ body{
     margin-top: 0;
 }
 
-.wd-message{
-    margin-right: 12px;
-    color: gray;
+.wd-icon-color{
+    color: lightgray;
 }
 
-.wd-reply{
-    margin-left: 90px;
-    margin-right: 12px;
-    color: gray;
+.wd-icon-red {
+    color: red;
 }
-
-.wd-heart{
-    margin-left: 90px;
-    margin-right: 12px;
-    color: gray;
-}
-
-.wd-share{
-    margin-left: 90px;
-    margin-right: 12px;
-    color: gray;
+.wd-icon-num{
+    margin-right: 90px;
 }
