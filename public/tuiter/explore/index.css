@@ -5,8 +5,9 @@ body{
 }
 
 /*this is A requirement css*/
-.bg-color-gray{
+.wd-bg-color-gray{
     background-color: rgb(47, 51, 54);
+    color: white;
 }
 
 .wd-rounded-corners-all-around {
@@ -20,15 +21,17 @@ span {
 .wd-gear-position{
     position: relative;
     left: 12px;
-    font-size: 30px;
+    font-size: 25px;
+    color:lightblue;
     top: 10px;
 }
 
 /*this is B requirement css*/
 .wd-dimension-landscape {
     margin-bottom:16px;
-    width: 56px;
-    height: 10px;
+    width: 53px;
+    height: 5px;
+    border-radius: 10px;
 }
 
 .wd-landscape-bg-color-blue {
