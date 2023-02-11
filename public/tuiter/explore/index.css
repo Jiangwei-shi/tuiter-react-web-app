@@ -1,6 +1,6 @@
 body{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding:16px
 }
 
@@ -21,9 +21,9 @@ span {
 .wd-gear-position{
     position: relative;
     left: 12px;
-    font-size: 25px;
-    color:lightblue;
-    top: 10px;
+    font-size: 15px;
+    color:black;
+    margin-right: 20px;
 }
 
 /*this is B requirement css*/
@@ -85,4 +85,47 @@ span {
 .wd-image-corners-all-around {
     border-radius: 20px;
 }
-/*this is e requirement css*/
+/*this is A4.1 requirement css*/
+
+.wd-button-style{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.wd-image-size{
+    max-width: 1250px;
+    max-height: 500px;
+    width:100%;
+    height:100%
+}
+
+.wd-content-image-size{
+    width:100%;
+    height:100%;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 5px 10px;
+    font-size: 4em;
+}
+
+.wd-right-side-image-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-right-side-image-size{
+    max-width: 50px;
+    max-height: 50px;
+    width:100%;
+    height:100%;
+}
+
+.wd-right-side-button-margin-top {
+    margin-top: 9px;
+}
+

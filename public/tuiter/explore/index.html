@@ -1,83 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"-->
+<!--          rel="stylesheet"/>-->
     <link href="index.css"
           rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
           rel="stylesheet"/>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <div>
-        <input class="
-        wd-rounded-corners-all-around
-        wd-bg-color-gray" style="width:500px; height:20px;" id="text-fields-Search" placeholder="Search Tuiter"/>
+    <div class="row">
+        <div class="col-3 bg-white text-white">
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fab fa-twitter fa-1x"></i><br/></li>
+                <li class="list-group-item"><i class="fa fa-home fa-1x"></i>    Home</li>
+                <li class="list-group-item active"><i class="fa fa-hashtag fa-1x"></i>  Explore</li>
+                <li class="list-group-item"><i class="fa fa-bell fa-1x"></i>    Notification</li>
+                <li class="list-group-item"><i class="fa fa-envelope fa-1x"></i>    Message</li>
+                <li class="list-group-item"><i class="fa fa-bookmark fa-1x"></i>    Bookmarks</li>
+                <li class="list-group-item"><i class="fa fa-list fa-1x"></i>    Lists</li>
+                <li class="list-group-item"><i class="fa fa-user"></i>  Profile</li>
+                <li class="list-group-item"><i class="fas fa-comment-dots"></i>  More</li>
+            </ul><br/>
+<!--            <button type="button" class="btn btn-primary wd-button-style">Click me!</button>-->
+            <li>
+                <a href="#" class="btn btn-primary wd-button-style">Go somewhere</a>
+            </li>
 
-        <a href="explore-settings.html"><i class="fa-solid fa-gear wd-gear-position"></i></a>
-    </div>
-    <div class="wd-topic">
-        <a href="" class="wd-topic-first">For you</a>
-        <a href="" class="wd-topic-items">Trending</a>
-        <a href="" class="wd-topic-items">COVID-19</a>
-        <a href="" class="wd-topic-items">News</a>
-        <a href="" class="wd-topic-items">Sports</a>
-        <a href="" class="wd-topic-items">Entertainment</a>
+        </div>
+        <div class="col-6 bg-white text-white">
+            <div class="d-flex justify-content-between">
+                <div class="col-11 my-3 rounded-pill border d-flex align-items-center">
+                    <i class="fas fa-search wd-gear-position"></i>
+                    <input type="text" class="form-control border-0 rounded-pill" placeholder="Search Twitter">
+                </div>
+                <div class="col-1 d-flex align-items-center justify-content-end">
+                    <a href="explore-settings.html"><i class="fa-solid fa-gear fa-lg"
+                                                       style="color: rgb(0, 123, 255)"></i></a>
+                </div>
+            </div>
+<!--            <label>-->
+<!--                <i class="fas fa-search wd-gear-position"></i>-->
+<!--                <input type="text" class="form-control border-0 rounded-pill" placeholder="Search Twitter">-->
+<!--            </label>-->
+<!--            <a><i class="fas fa-search wd-gear-position"></i></a>-->
+<!--            <a href="explore-settings.html"><i class="fa-solid fa-gear wd-gear-position"></i></a>-->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" >Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <br/>
+
+            <ul class="list-group">
+                <li class="list-group-item" style="padding: 0" >
+                    <div class="position-relative">
+                    <img class="wd-image-size" src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+
+<!--                        <img src="../../images/Starship.webp" class="card-img-top img-fluid">-->
+                    <p class="image-caption">Spacex's Starship</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row" style="min-height: 150px">
+                        <div class="col-10">
+                            <label style="font-size: 13px">The New York Times</label><br/>
+                            <label >ReactJS</label><br/>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form </p>
+                        </div>
+                        <div class="col-2 bg-white" >
+                            <img class="wd-image-corners-all-around wd-content-image-size"
+                                 src="https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_58pWIDE20230205-a6-CTY-HTA0077.jpg"/>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row" style="min-height: 150px">
+                        <div class="col-10">
+                            <label style="font-size: 13px">The New York Times</label><br/>
+                            <label >ReactJS</label><br/>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form </p>
+                        </div>
+                        <div class="col-2 bg-white" >
+                            <img class="wd-image-corners-all-around wd-content-image-size"
+                                 src="https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_58pWIDE20230205-a6-CTY-HTA0077.jpg"/>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="list-group-item">
+                    <div class="row" style="min-height: 150px">
+                        <div class="col-10">
+                            <label style="font-size: 13px">The New York Times</label><br/>
+                            <label >ReactJS</label><br/>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form </p>
+                        </div>
+                        <div class="col-2 bg-white" >
+                            <img class="wd-image-corners-all-around wd-content-image-size"
+                             src="https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_58pWIDE20230205-a6-CTY-HTA0077.jpg"/>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row" style="min-height: 150px">
+                        <div class="col-10">
+                            <label style="font-size: 13px">The New York Times</label><br/>
+                            <label >ReactJS</label><br/>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form </p>
+                        </div>
+                        <div class="col-2 bg-white" >
+                            <img class="wd-image-corners-all-around wd-content-image-size"
+                                 src="https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_58pWIDE20230205-a6-CTY-HTA0077.jpg"/>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3 bg-white">
+            <ul class="list-group">
+                <li class="list-group-item">Who to follow</li>
+                <li class="list-group-item" style="height: 75px">
+                    <div class="row" style="height: 58px">
+                        <div class="col-3" style="padding:7px">
+                            <img class="wd-right-side-image-corners-all-around wd-right-side-image-size"
+                                 src="https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2022/04/java-1200.png"/>
+                        </div>
+                        <div class="col-6 bg-white">
+                            <label>java</label><i class="fa-solid fa-circle-check"></i><br/>
+                            <label>@Java</label>
+                        </div>
+                        <div class="col-3 bg-white">
+                            <a href="#" class="btn btn-primary wd-button-style wd-right-side-button-margin-top">follow</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="height: 75px">
+                    <div class="row" style="height: 58px">
+                        <div class="col-3" style="padding:7px">
+                            <img class="wd-right-side-image-corners-all-around wd-right-side-image-size"
+                                 src="https://pbs.twimg.com/profile_images/1405603367045324801/CaXrPnKL_400x400.jpg"/>
+                        </div>
+                        <div class="col-6 bg-white">
+                            <label>relativity space</label><i class="fa-solid fa-circle-check"></i><br/>
+                            <label>@relativity space</label>
+                        </div>
+                        <div class="col-3 bg-white">
+                            <a href="#" class="btn btn-primary wd-button-style wd-right-side-button-margin-top">follow</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="height: 75px">
+                    <div class="row" style="height: 58px">
+                        <div class="col-3" style="padding:7px">
+                            <img class="wd-right-side-image-corners-all-around wd-right-side-image-size"
+                                 src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg"/>
+                        </div>
+                        <div class="col-6 bg-white">
+                            <label>Virgin Galactic</label><i class="fa-solid fa-circle-check"></i><br/>
+                            <label>@Virgin Galactic</label>
+                        </div>
+                        <div class="col-3 bg-white">
+                            <a href="#" class="btn btn-primary wd-button-style wd-right-side-button-margin-top">follow</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="height: 75px">
+                    <div class="row" style="height: 58px">
+                        <div class="col-3" style="padding:7px">
+                            <img class="wd-right-side-image-corners-all-around wd-right-side-image-size"
+                                 src="https://3dprint.com/wp-content/uploads/2015/08/m3.jpg"/>
+                        </div>
+                        <div class="col-6 bg-white">
+                            <label>NASA</label><i class="fa-solid fa-circle-check"></i><br/>
+                            <label>@NASA</label>
+                        </div>
+                        <div class="col-3 bg-white">
+                            <a href="#" class="btn btn-primary wd-button-style wd-right-side-button-margin-top">follow</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item" style="height: 75px">
+                    <div class="row" style="height: 58px">
+                        <div class="col-3" style="padding:7px">
+                            <img class="wd-right-side-image-corners-all-around wd-right-side-image-size"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Tesla_T_symbol.svg/1200px-Tesla_T_symbol.svg.png"/>
+                        </div>
+                        <div class="col-6 bg-white">
+                            <label>TESLA</label><i class="fa-solid fa-circle-check"></i><br/>
+                            <label>@TESLA</label>
+                        </div>
+                        <div class="col-3 bg-white">
+                            <a href="#" class="btn btn-primary wd-button-style wd-right-side-button-margin-top">follow</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="wd-dimension-landscape wd-landscape-bg-color-blue "></div>
-    <HR>
 
-    <div>
-        <label class="wd-trending">Trending in Science</label><br/>
-        <label>Starship</label><br/>
-        <label class="wd-trending">55.5k Tweets</label><br/>
-    </div>
-    <p> <HR></p>
-    <div>
-        <label class="wd-trending">Sports . Trending</label><br/>
-        <label>Joe Rogan</label><br/>
-        <label class="wd-trending">5,218 Tweets</label><br/>
-    </div>
-    <p> <HR></p>
 
-    <div>
-        <label class="wd-float-left" style="font-size: 13px">The New York Times</label>
-        <label class="wd-trending wd-float-left">.Yesterday</label><br/>
-        <p class="wd-author-post wd-float-left">For Biden, a Chance for a Fresh Start in a New Era of Divided Government</p>
-        <img class="wd-float-right
-                    wd-image-corners-all-around "
-             style="width:100px; height:100px" src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
-        <div class="wd-float-done"></div>
-    </div>
-    <p><HR></p>
-    <div>
-        <label class="wd-float-left" style="font-size: 13px">The New York Times</label>
-        <label class="wd-trending wd-float-left">.Today</label><br/>
-        <p class="wd-author-post wd-float-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form </p>
-        <img class="wd-float-right
-                    wd-image-corners-all-around "
-             style="width:100px; height:100px" src="    https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_58pWIDE20230205-a6-CTY-HTA0077.jpg"/>
-        <div class="wd-float-done"></div>
-    </div>
-    <p><HR></p>
-    <div>
-        <label class="wd-trending wd-float-left">COVID-19.Live</label><br/>
-        <p class="wd-author-post wd-float-left">Downing of China’s balloon creates spectacle over tourism hub </p>
-        <img class="wd-float-right
-                    wd-image-corners-all-around "
-             style="width:100px; height:100px" src="    https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_13452270-ee11368580ab4b34bbf9a649619e810f-300x240.jpg"/>
-        <div class="wd-float-done"></div>
-    </div>
-    <p><HR></p>
-    <div>
-        <label class="wd-trending wd-float-left">News.Live</label><br/>
-        <p class="wd-author-post wd-float-left">‘Murphy Brown’ actor Charles Kimbrough dies at 86</p>
-        <img class="wd-float-right
-                    wd-image-corners-all-around "
-             style="width:100px; height:100px" src="    https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_AP23036649376519-300x177.jpg"/>
-        <div class="wd-float-done"></div>
-    </div>
+
+
+<!--        <div>-->
+<!--        <input class="-->
+<!--        wd-rounded-corners-all-around-->
+<!--        wd-bg-color-gray" style="width:500px; height:20px;" id="text-fields-Search" placeholder="Search Tuiter"/>-->
+<!--        <a href="explore-settings.html"><i class="fa-solid fa-gear wd-gear-position"></i></a>-->
+<!--    </div>-->
+<!--    <div class="wd-topic">-->
+<!--        <a href="" class="wd-topic-first">For you</a>-->
+<!--        <a href="" class="wd-topic-items">Trending</a>-->
+<!--        <a href="" class="wd-topic-items">COVID-19</a>-->
+<!--        <a href="" class="wd-topic-items">News</a>-->
+<!--        <a href="" class="wd-topic-items">Sports</a>-->
+<!--        <a href="" class="wd-topic-items">Entertainment</a>-->
+<!--    </div>-->
+
+<!--    <div class="wd-dimension-landscape wd-landscape-bg-color-blue "></div>-->
+<!--    <HR>-->
+
+<!--    <div>-->
+<!--        <label class="wd-trending">Trending in Science</label><br/>-->
+<!--        <label>Starship</label><br/>-->
+<!--        <label class="wd-trending">55.5k Tweets</label><br/>-->
+<!--    </div>-->
+<!--    <p> <HR></p>-->
+<!--    <div>-->
+<!--        <label class="wd-trending">Sports . Trending</label><br/>-->
+<!--        <label>Joe Rogan</label><br/>-->
+<!--        <label class="wd-trending">5,218 Tweets</label><br/>-->
+<!--    </div>-->
+<!--    <p> <HR></p>-->
+
+<!--    <div>-->
+<!--        <label class="wd-float-left" style="font-size: 13px">The New York Times</label>-->
+<!--        <label class="wd-trending wd-float-left">.Yesterday</label><br/>-->
+<!--        <p class="wd-author-post wd-float-left">For Biden, a Chance for a Fresh Start in a New Era of Divided Government</p>-->
+<!--        <img class="wd-float-right-->
+<!--                    wd-image-corners-all-around "-->
+<!--             style="width:100px; height:100px" src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>-->
+<!--        <div class="wd-float-done"></div>-->
+<!--    </div>-->
+<!--    <p><HR></p>-->
+<!--    <div>-->
+<!--        <label class="wd-float-left" style="font-size: 13px">The New York Times</label>-->
+<!--        <label class="wd-trending wd-float-left">.Today</label><br/>-->
+<!--        <p class="wd-author-post wd-float-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form </p>-->
+<!--        <img class="wd-float-right-->
+<!--                    wd-image-corners-all-around "-->
+<!--             style="width:100px; height:100px" src="    https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_58pWIDE20230205-a6-CTY-HTA0077.jpg"/>-->
+<!--        <div class="wd-float-done"></div>-->
+<!--    </div>-->
+<!--    <p><HR></p>-->
+<!--    <div>-->
+<!--        <label class="wd-trending wd-float-left">COVID-19.Live</label><br/>-->
+<!--        <p class="wd-author-post wd-float-left">Downing of China’s balloon creates spectacle over tourism hub </p>-->
+<!--        <img class="wd-float-right-->
+<!--                    wd-image-corners-all-around "-->
+<!--             style="width:100px; height:100px" src="    https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_13452270-ee11368580ab4b34bbf9a649619e810f-300x240.jpg"/>-->
+<!--        <div class="wd-float-done"></div>-->
+<!--    </div>-->
+<!--    <p><HR></p>-->
+<!--    <div>-->
+<!--        <label class="wd-trending wd-float-left">News.Live</label><br/>-->
+<!--        <p class="wd-author-post wd-float-left">‘Murphy Brown’ actor Charles Kimbrough dies at 86</p>-->
+<!--        <img class="wd-float-right-->
+<!--                    wd-image-corners-all-around "-->
+<!--             style="width:100px; height:100px" src="    https://staradvertiser.wpenginepowered.com/wp-content/uploads/2023/02/web1_AP23036649376519-300x177.jpg"/>-->
+<!--        <div class="wd-float-done"></div>-->
+<!--    </div>-->
 
 </body>
 </html>
