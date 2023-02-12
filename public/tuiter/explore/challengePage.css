@@ -1,7 +1,7 @@
 body{
     background-color: white;
     color: black;
-    padding:16px
+    padding: 16px 300px;
 }
 
 .wd-button-style{
@@ -52,4 +52,30 @@ body{
     font-size: 15px;
     color:black;
     margin-right: 20px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: dodgerblue !important;
+    border-color: dodgerblue !important;
+}
+
+.wd-bg-color-gray{
+    background-color: #eff3f4;
+    color: white;
+    height: 50px;
+}
+.wd-input-bg-color-gray{
+    background-color: #eff3f4;
+    color: white;
+    height: 48px;
+}
+
+.wd-dimension-landscape {
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.wd-landscape-bg-color-blue {
+    background-color: dodgerblue;
 }
