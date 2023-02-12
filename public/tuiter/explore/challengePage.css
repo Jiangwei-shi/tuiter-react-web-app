@@ -10,6 +10,12 @@ body{
     border-radius: 40px;
 }
 
+.wd-follow-button-style{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+}
+
 .wd-image-size{
     max-width: 1250px;
     max-height: 500px;
