@@ -9,8 +9,12 @@ export default [
       "",
     linkImage:
       "https://images.idgesg.net/images/idge/imported/imageapi/2022/01/26/06/handshake_neon_sign_by_charles_deluvio_cc0_via_unsplash_1200x800-100765871-large-100917242-large.jpg?auto=webp&quality=85,70",
+    linkContentTitle:
+      "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
     linkContent:
-      "I’ve addressed this topic of “general purpose” before and how it affects developer decisions around databases, but it goes well beyond databases.",
+      "From training to launch to landing. this all-access docuseries rides along with the inspiration4 crew on the first all-civilian orbital space...",
+    link:
+      "netflix.com",
   },
   {
     userName: "New York Post",
@@ -22,7 +26,11 @@ export default [
       "https://zycrypto.com/wp-content/uploads/2023/02/TMS-Network-TMSN-Fuels-Its-Growth-Engine-To-Fullest-As-Crypto-Projects-Unravel.jpg",
     linkImage:
       "",
+    linkContentTitle:
+      "",
     linkContent:
+      "",
+    link:
       "",
   },
 ];

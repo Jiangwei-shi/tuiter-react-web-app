@@ -33,17 +33,27 @@ const PostItem = (post) => {
                        border-bottom: 1px solid gray;"
                 src="${post.linkImage}"
               />
-              <p>
+              <div class="pt-2 ps-2 pe-2">
+                ${post.linkContentTitle}
+              </div>
+              <div class="pb-2 ps-2 pe-2" style="font-size: 15px; color: gray">
                 ${post.linkContent}
-              </p>
+              </div>
+              <div class="pb-2 ps-2 pe-2" style="font-size: 15px; color: gray">
+              <i class="fa-solid fa-link"></i>
+              ${post.link}
+              </div>
             </div>`
           }
             
-            <div class="d-flex justify-content-start">
-                <a href="#" ><i class="fa-regular fa-message fa-lg wd-icon-color" style="font-size:20px;">      <span class="wd-icon-num">100</span></i></a>  
-                <a href="#" ><i class="fa-solid fa-retweet fa-lg wd-icon-color  ms-3" style="font-size:20px;">    <span class="wd-icon-num">109</span></i></a>
-                <a href="#"><i class="fa-solid fa-heart fa-lg wd-icon-red  ms-3" style="font-size:20px;">            <span class="wd-icon-num"><em class="wd-icon-red">27</em></span></i></a>
-                <a href="#" ><i class="fa-sharp fa-solid fa-arrow-up-from-bracket fa-lg wd-icon-color  ms-3" style="font-size:20px;"></i></a>
+            <div class="d-flex justify-content-sm-between p-2">
+                <a href="#" ><i class="fa-regular fa-comment " style="font-size:15px; color: gray">      
+                <span class="wd-icon-num">100</span></i></a>  
+                <a href="#" ><i class="fa-solid fa-retweet  ms-3" style="font-size:15px; color: gray">    
+                <span class="wd-icon-num">109</span></i></a>
+                <a href="#"><i class="fa-regular fa-heart  ms-3" style="font-size:15px; color: gray">            
+                <span class="wd-icon-num"><em class="wd-icon-red">27</em></span></i></a>
+                <a href="#" ><i class="fa-sharp fa-solid fa-arrow-up-from-bracket  ms-3" style="font-size:15px; color: gray""></i></a>
             </div>
             
         </div>
