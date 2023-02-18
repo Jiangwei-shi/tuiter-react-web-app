@@ -1,4 +1,4 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
     return (`
    <div class="list-group">
       <a class="list-group-item" href="/">
@@ -6,13 +6,15 @@ const NavigationSidebar = () => {
       <!-- continue rest of list, e.g.,
            Home, Explore, Notifications,  Messages, etc. -->
       <!--Home-->
-      <a class="list-group-item list-group-item-action" href="/">
+     
+      <a class="list-group-item list-group-item-action  ${active === "Home" ? 'active' :  ''} " 
+         href="../HomeScreen/index.html">
          <i class="fas fa-home"></i>
          <span class="d-none d-xl-inline">Home</span>
       </a>
-      
-      <a href="/"
-         class="list-group-item list-group-item-action active">
+      <!--index-->
+      <a href="../explore/index.html "
+         class="list-group-item list-group-item-action ${active === "explore" ? 'active' :  ''}">
          <i class="fas fa-hashtag"></i>
          <span class="d-none d-xl-inline">Explore</span>
       </a>
