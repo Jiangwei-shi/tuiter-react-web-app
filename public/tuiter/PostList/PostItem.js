@@ -18,13 +18,14 @@ const PostItem = (post) => {
             <p>
               ${post.content}
             </p>
-            
+           
+        ${ post.image ? `
             <img
               style="width: 100%; height: 300px; border-radius: 2%"
               src="${post.image}"
-            />    
-            
-            <div style="border: 1px solid gray; border-radius: 2%; display: flow">
+            /> `
+            :       
+         `<div style="border: 1px solid gray; border-radius: 2%; display: flow">
               <img
                 style="width: 100%; height: 300px; 
                        border-top-left-radius: 2%; 
@@ -35,7 +36,8 @@ const PostItem = (post) => {
               <p>
                 ${post.linkContent}
               </p>
-            </div>
+            </div>`
+          }
             
             <div class="d-flex justify-content-start">
                 <a href="#" ><i class="fa-regular fa-message fa-lg wd-icon-color" style="font-size:20px;">      <span class="wd-icon-num">100</span></i></a>  
