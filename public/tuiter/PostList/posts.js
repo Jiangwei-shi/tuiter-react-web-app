@@ -1,39 +1,28 @@
 export default [
   {
-    topic: "Web Development",
-    userName: "ReactJS",
-    time: "2h",
-    title:
-      "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    userName: "Elon Musk",
+    time: "@elonmusk·23h",
+    avatar:"https://images.macrumors.com/t/2j-a1bjN16dA_wsf6-Or-8jDcn4=/800x0/article-new/2014/02/elonmusk.jpg?lossy",
+    content:
+      "Amazing show about @Inspiration4X mission!",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2Y2gmQB5zuaBd1AfN_AyEgoTgxPF65i7GwlvrbnnP_RUlubieG19WFnonCtS4ZfAox4&usqp=CAU",
+      "",
+    linkImage:
+      "https://images.idgesg.net/images/idge/imported/imageapi/2022/01/26/06/handshake_neon_sign_by_charles_deluvio_cc0_via_unsplash_1200x800-100765871-large-100917242-large.jpg?auto=webp&quality=85,70",
+    linkContent:
+      "I’ve addressed this topic of “general purpose” before and how it affects developer decisions around databases, but it goes well beyond databases.",
   },
   {
-    topic: "",
-    userName: "JavaScript",
-    time: "1 day",
-    title:
-      "JavaScript is programming language that can run on browsers as well as desktops",
+    userName: "New York Post",
+    time: "@nypost·23h",
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBX3QrS-0sjjNOgUrRkFE1aJHNgyk03pllOiZDBsYrtA-bIXaVtkX12Cfp5RjB5Zg3B6M&usqp=CAU",
+    content:
+      "Grimess seen reading Karl Marx following split with world's richest man Elon Musk trib.al/nx2Gfaq",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-    tweets: "123K",
-  },
-  {
-    topic: "Web Development",
-    userName: "",
-    title: "jQuery",
-    time: "last week",
-    image:
-      "https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png",
-    tweets: "122K",
-  },
-  {
-    topic: "Web Development",
-    userName: "NodeJS",
-    title: "",
-    time: "last month",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAl760B1LCCm8M4IfYmSdDKeA73KvMgFT4ievlterVYahVRt3N6ebX9xHdbe2Lbnncg0Q&usqp=CAU",
-    tweets: "120K",
+      "https://zycrypto.com/wp-content/uploads/2023/02/TMS-Network-TMSN-Fuels-Its-Growth-Engine-To-Fullest-As-Crypto-Projects-Unravel.jpg",
+    linkImage:
+      "",
+    linkContent:
+      "",
   },
 ];
