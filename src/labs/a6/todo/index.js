@@ -4,7 +4,6 @@ const Todos = () => {
   return(
     <>
       <TodoList/>
-
     </>
   );
 };
