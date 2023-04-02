@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faComment, faHeart, faRetweet, faShare} from "@fortawesome/free-solid-svg-icons";
-import {updateLikes} from "./tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 import './index.css';
 
 const TuitStats = (
@@ -33,7 +33,7 @@ const TuitStats = (
       liked: !tuit.liked
     };
     setNewTuit(newTuit);
-    dispatch(updateLikes(newTuit));
+    dispatch(updateTuitThunk(newTuit));
   }
 
   return (

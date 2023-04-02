@@ -1,42 +1,57 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from './tuits.json';
+import { updateTuitThunk,createTuitThunk,deleteTuitThunk,findTuitsThunk}
+  from "../../services/tuits-thunks";
 
-const Tuits = {
-  "userName": "SpaceX",
-  "handle": "@spacex",
-  "image": "spacex.png",
-  "topic": "Space",
-  "time": "2h",
-  "liked": true,
-  "replies": 123,
-  "retuits": 234,
-  "likes": 456,
+const initialState = {
+  tuits: [],
+  loading: false
 }
-
 
 const tuitsSlice = createSlice({
   name: 'tuits',
-  initialState: tuits,
-  reducers: {
-    updateLikes: (state, action) => {
-      state.tuits = action.payload;
-    },
-    createTuit(state, action) {
-      state.unshift({
-        ...action.payload,
-        ...Tuits,
-        _id: (new Date()).getTime(),
-      })
-    },
-    deleteTuit(state, action) {
-      const index = state
-      .findIndex(tuit =>
-        tuit._id === action.payload);
-      state.splice(index, 1);
-    },
-  }
+  initialState,
+  extraReducers: {
+    [findTuitsThunk.pending]:
+      (state) => {
+        state.loading = true
+        state.tuits = []
+      },
+    [findTuitsThunk.fulfilled]:
+      (state, { payload }) => {
+        state.loading = false
+        state.tuits = payload
+      },
+    [findTuitsThunk.rejected]:
+      (state, action) => {
+        state.loading = false
+        state.error = action.error
+      },
+    [deleteTuitThunk.fulfilled] :
+      (state, { payload }) => {
+        state.loading = false
+        state.tuits = state.tuits
+        .filter(t => t._id !== payload)
+      },
+    [createTuitThunk.fulfilled]:
+      (state, { payload }) => {
+        state.loading = false
+        state.tuits.push(payload)
+      },
+    [updateTuitThunk.fulfilled]:
+      (state, {payload}) => {
+        state.loading = false
+        const tuitNdx = state.tuits
+        .findIndex(t => t._id === payload._id)
+        state.tuits[tuitNdx] = {
+          ...state.tuits[tuitNdx],
+          ...payload
+        }
+      }
+  },
+
+  reducers: { }
 });
 
+export const {createTuit, deleteTuit, updateLikes} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
-export const {updateLikes, createTuit, deleteTuit} = tuitsSlice.actions;
 

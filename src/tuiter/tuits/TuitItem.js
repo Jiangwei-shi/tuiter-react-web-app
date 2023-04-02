@@ -4,14 +4,14 @@ import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
 import TuitStats from "./TuitStats";
 import './index.css';
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
   {
     post = {
       "_id": 123,
       "topic": "Space",
-      "userName": "SpaceX",
+      "username": "SpaceX",
       "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
       "time": "2h",
       "image": "tesla",
@@ -26,7 +26,7 @@ const TuitItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
 
   return(
@@ -38,7 +38,7 @@ const TuitItem = (
         <div className="col ms-3">
           <div className="d-flex justify-content-between">
             <div className="flex-column">
-              <b>{post.userName}</b><FontAwesomeIcon icon={faCheckCircle} className="ms-1 me-2 text-primary"/>
+              <b>{post.username}</b><FontAwesomeIcon icon={faCheckCircle} className="ms-1 me-2 text-primary"/>
               <span className="text-dark">@ {post.topic} · {post.time}</span>
             </div>
             <i className="bi bi-x-lg float-end clickable"
